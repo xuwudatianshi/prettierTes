@@ -1,0 +1,15 @@
+{
+  "name": "prettierTes",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,cjs,mjs,jsx,ts,tsx,json,css,scss,md,mdx,html,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}
+
