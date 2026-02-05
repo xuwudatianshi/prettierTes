@@ -6,10 +6,15 @@
     "format:check": "prettier . --check",
     "prepare": "husky install"
   },
+  "devDependencies": {
+    "husky": "^9.0.0"
+  },
   "lint-staged": {
     "**/*.{js,cjs,mjs,jsx,ts,tsx,json,css,scss,md,mdx,html,yml,yaml}": [
       "prettier --write"
     ]
+  },
+  "volta": {
+    "node": "21.7.3"
   }
 }
-
